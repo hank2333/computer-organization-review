@@ -16,7 +16,7 @@ docs={}
 for name in ('index.html',data['KN'],data['EX']):
  parser=Parse(); txt=(ROOT/name).read_text(encoding='utf-8'); parser.feed(txt)
  assert len(parser.ids)==len(set(parser.ids)),f'duplicate ids {name}'
- assert '�' not in txt and '????' not in txt
+ assert '�' not in txt and '????' not in txt and '\x00' not in txt
  docs[name]=parser
 for name,doc in docs.items():
  for href in doc.links:

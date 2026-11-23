@@ -438,7 +438,7 @@ table(['Q4 对象','截图起始地址','按地址递增的内容(H)'],[['a=10�
 fig(32,8,'展开 Q6 C 变量与地址原图')+
 table(['Q6 对象','截图起始地址','按地址递增的内容(H)'],[['short a[4]={5634H,78ABH,25D,18D}','0060FEE4H','34 56 AB 78 19 00 12 00'],['num3=98','0060FEECH','62 00 00 00'],['num2=56','0060FEF0H','38 00 00 00'],['num1=78','0060FEF4H','4E 00 00 00'],['char ch[5]="happy"','0060FEFBH','68 61 70 70 79']])+
 p('Q6 的 FEF8H–FEFAH 是截图未分配给这些对象的空隙，不能猜内容。按地址递减画图时，只需把逐字节地址顺序倒过来，数本身的小端编码保持不变。Q5、Q7 要用自己的实际地址替代截图基址，数组内部的字节排列规则相同。')+
-box('这两段 char 数组长度恰好等于可见字符数，C 允许省略末尾零字节初始化。它们不是以 \0 结尾的 C 字符串，不能直接当作 %s 的安全输入；逐元素处理可以。'),
+box('这两段 char 数组长度恰好等于可见字符数，C 允许省略末尾零字节初始化。它们不是以 \\0 结尾的 C 字符串，不能直接当作 %s 的安全输入；逐元素处理可以。'),
 '“向下画时地址减小”是画图方向；“后声明变量地址更低”是某次编译布局；“整数小端”是字节排列规则，三者不要混为一谈。')
 
 asm_head='.MODEL SMALL\n.STACK 100H\n.DATA\n'
@@ -773,8 +773,8 @@ def build():
   workbook+=f'<section class="chapter" id="{e["id"]}"><div class="branch">讲解例题 · {e["id"].upper()}</div><h2>{e["title"]}</h2><div>{e["source"]}</div><div class="refs">'+links+'</div><h3>题目与条件</h3>'+e['prompt']+'<div class="method"><h3>解题依据</h3>'+e['method']+'</div><details class="draft"><summary>写下我的推导（刷新后清空，不自动评分）</summary><textarea aria-label="'+e['id'].upper()+' 解题草稿" placeholder="先写位宽、编码、地址或关键中间结果……"></textarea></details><details class="solution"><summary>展开分步解析与答案</summary><div>'+e['solution']+'</div>'+('<div class="trap"><strong>易错点 / 边界</strong><br>'+e['trap']+'</div>' if e['trap'] else '')+'</details></section>'
   etoc+=f'<a href="#{e["id"]}">{e["title"]}</a>'
  workbook+=coverage_html()+quiz_html()+source_appendix();etoc+='<a href="#sources">材料清单与校核说明</a>'
- (ROOT/KN).write_text(page('知识主干与分支','从数据如何表示，逐步走到 CPU 如何执行程序。每个知识节点都附有对应讲解册的准确跳转位置。',knowledge,ktoc),encoding='utf-8')
- (ROOT/EX).write_text(page('Tutorial 例题讲解与自测','按方法整理原题，以必要讲解连接分步推导。练习、查答案、返回知识点，在同一条复习路径中完成。',workbook,etoc,True),encoding='utf-8')
+ (ROOT/KN).write_text(page('知识主干与分支','从数据如何表示，逐步走到 CPU 如何执行程序。每个知识节点都附有对应讲解册的准确跳转位置。',knowledge,ktoc),encoding='utf-8',newline='\n')
+ (ROOT/EX).write_text(page('Tutorial 例题讲解与自测','按方法整理原题，以必要讲解连接分步推导。练习、查答案、返回知识点，在同一条复习路径中完成。',workbook,etoc,True),encoding='utf-8',newline='\n')
  print('Built',len(ks),'knowledge nodes,',len(es),'example groups,',len(quizzes),'quizzes')
 
 if __name__=='__main__': build()
