@@ -1,0 +1,116 @@
+#include <stdio.h>
+
+int main( void )
+{
+
+char problemcase;
+short int decimal,signmagnitude, onescomplement,twoscomplement,signmagnitudeabsolute;
+printf( "A represents the case that the decimal value is given.\n");
+printf( "B represents the case that the sign magnitude is given.\n");
+printf( "C represents the case that the one's complement is given.\n");
+printf( "D represents the case that the two's complement is given.\n");
+
+printf( "Please key in a letter A, B, C, or D according to the problem you are dealing with: ");
+scanf( "%c",&problemcase);
+
+
+switch(problemcase)
+{
+case 'A':
+printf( "Enter a decimal value:" );
+scanf( "%hd",&decimal);
+twoscomplement=decimal;
+if((twoscomplement&0X8000)==0)
+{
+onescomplement=twoscomplement;
+signmagnitude=twoscomplement;
+}
+else
+{
+onescomplement=twoscomplement-1;
+signmagnitude=onescomplement^0XFFFF;
+signmagnitude=signmagnitude|0X8000;
+}
+break;
+
+
+case 'B':
+printf( "Enter a sign magnitude representation with hexadecimal value:" );
+scanf( "%hX",&signmagnitude);
+if(signmagnitude==0X8000)
+{
+onescomplement=0XFFFF;
+twoscomplement=0;
+}
+else
+{
+if(signmagnitude>=0)
+{
+onescomplement=signmagnitude;
+twoscomplement=signmagnitude;
+}
+else
+{
+signmagnitudeabsolute=signmagnitude&0X7FFF;
+onescomplement=signmagnitudeabsolute^0XFFFF;
+twoscomplement=onescomplement+1;
+}
+}
+break;
+
+case 'C':
+printf( "Enter a one's complement representation with hexadecimal value:" );
+scanf( "%hX",&onescomplement);
+if(onescomplement==0XFFFF)
+{
+signmagnitude=0X8000;
+twoscomplement=0;
+}
+else
+{
+if(onescomplement>=0)
+{
+signmagnitude=onescomplement;
+twoscomplement=onescomplement;
+}
+else
+{
+signmagnitude=onescomplement^0XFFFF;
+signmagnitude=signmagnitude|0X8000;
+twoscomplement=onescomplement+1;
+}
+}
+break;
+
+case 'D':
+printf( "Enter a two's complement representation with hexadecimal value:" );
+scanf( "%hX",&twoscomplement);
+
+
+if((twoscomplement>=0))
+{
+signmagnitude=twoscomplement;
+onescomplement=twoscomplement;
+}
+else
+{
+onescomplement=twoscomplement-1;
+signmagnitude=onescomplement^0XFFFF;
+signmagnitude=signmagnitude|0X8000;
+}
+break;
+
+
+//default:
+//break;
+}
+
+
+
+printf( "Its Decimal value is: %hd.\n",twoscomplement);
+printf( "Its sign magnitude representation is %hX: \n", signmagnitude );
+printf( "Its one's complement representation is %hX: \n", onescomplement );
+printf( "Its two's complement representation is %hX: \n", twoscomplement );
+
+ }
+

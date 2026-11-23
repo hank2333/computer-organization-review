@@ -1,0 +1,224 @@
+[
+  {
+    "id": "00",
+    "path": "Week 1/Chapter0-About the Course.pdf",
+    "pages": 22,
+    "chars": 4993
+  },
+  {
+    "id": "01",
+    "path": "Week 1/Week1 Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 8,
+    "chars": 0
+  },
+  {
+    "id": "02",
+    "path": "Week 1/Week1-Lecture-Chapter1.pdf",
+    "pages": 49,
+    "chars": 7973
+  },
+  {
+    "id": "03",
+    "path": "Week 1/Week1-Tutorial-Chapter1 with solution.pdf",
+    "pages": 61,
+    "chars": 10582
+  },
+  {
+    "id": "04",
+    "path": "Week 1/Week1-Tutorial-Chapter1.pdf",
+    "pages": 22,
+    "chars": 3414
+  },
+  {
+    "id": "05",
+    "path": "Week 2/Week2 Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 10,
+    "chars": 2
+  },
+  {
+    "id": "06",
+    "path": "Week 2/Week2-Lecture-Chapter1.pdf",
+    "pages": 36,
+    "chars": 5663
+  },
+  {
+    "id": "07",
+    "path": "Week 2/Week2-Tutorial-Chapter1 with solution.pdf",
+    "pages": 25,
+    "chars": 3976
+  },
+  {
+    "id": "08",
+    "path": "Week 2/Week2-Tutorial-Chapter1.pdf",
+    "pages": 13,
+    "chars": 1880
+  },
+  {
+    "id": "09",
+    "path": "Week 3/Selflearning -Foundation of floating point number.pdf",
+    "pages": 22,
+    "chars": 4913
+  },
+  {
+    "id": "10",
+    "path": "Week 3/Week3 Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 13,
+    "chars": 0
+  },
+  {
+    "id": "11",
+    "path": "Week 3/Week3-Lecture-Chapter2.pdf",
+    "pages": 27,
+    "chars": 1781
+  },
+  {
+    "id": "12",
+    "path": "Week 3/Week3-Tutorial-Chapter2 with solution.pdf",
+    "pages": 24,
+    "chars": 5370
+  },
+  {
+    "id": "13",
+    "path": "Week 3/Week3-Tutorial-Chapter2.pdf",
+    "pages": 14,
+    "chars": 1760
+  },
+  {
+    "id": "14",
+    "path": "Week 4/Week4 Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 14,
+    "chars": 0
+  },
+  {
+    "id": "15",
+    "path": "Week 4/Week4-Lecture-Chapter2.pdf",
+    "pages": 60,
+    "chars": 15647
+  },
+  {
+    "id": "16",
+    "path": "Week 4/Week4-Tutorial-Chapter2 with solution.pdf",
+    "pages": 25,
+    "chars": 2663
+  },
+  {
+    "id": "17",
+    "path": "Week 4/Week4-Tutorial-Chapter2.pdf",
+    "pages": 13,
+    "chars": 1525
+  },
+  {
+    "id": "18",
+    "path": "Week 5/Week 5/Week5 Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 4,
+    "chars": 0
+  },
+  {
+    "id": "19",
+    "path": "Week 5/Week 5/Week5-Lecture-Chapter3.pdf",
+    "pages": 63,
+    "chars": 20692
+  },
+  {
+    "id": "20",
+    "path": "Week 5/Week 5/Week5-Tutorial- Practice and Solution Chapter2.pdf",
+    "pages": 19,
+    "chars": 1836
+  },
+  {
+    "id": "21",
+    "path": "Week 6/Week 6/Week6 Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 6,
+    "chars": 0
+  },
+  {
+    "id": "22",
+    "path": "Week 6/Week 6/Week6 Tutorial-Chapter4 and Chapter5 with solution.pdf",
+    "pages": 25,
+    "chars": 3365
+  },
+  {
+    "id": "23",
+    "path": "Week 6/Week 6/Week6 Tutorial-Chapter4 and Chapter5.pdf",
+    "pages": 17,
+    "chars": 1370
+  },
+  {
+    "id": "24",
+    "path": "Week 6/Week 6/Week6-Lecture-Chapter4.pdf",
+    "pages": 26,
+    "chars": 11325
+  },
+  {
+    "id": "25",
+    "path": "Week 6/Week 6/Week6-Lecture-Chapter5.pdf",
+    "pages": 20,
+    "chars": 6560
+  },
+  {
+    "id": "26",
+    "path": "Week 7/Week 7/Week7-Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 8,
+    "chars": 0
+  },
+  {
+    "id": "27",
+    "path": "Week 7/Week 7/Week7-Lecture-Chapter5.pdf",
+    "pages": 31,
+    "chars": 9264
+  },
+  {
+    "id": "28",
+    "path": "Week 7/Week 7/Week7-Lecture-Chapter7.pdf",
+    "pages": 124,
+    "chars": 39749
+  },
+  {
+    "id": "29",
+    "path": "Week 7/Week 7/Week7-Trtorial-Chapter7 with solution.pdf",
+    "pages": 26,
+    "chars": 4189
+  },
+  {
+    "id": "30",
+    "path": "Week 7/Week 7/Week7-Trtorial-Chapter7.pdf",
+    "pages": 19,
+    "chars": 1583
+  },
+  {
+    "id": "31",
+    "path": "Week 7/Week 7/Week7-Tutorial-Chapter5 with solution.pdf",
+    "pages": 24,
+    "chars": 5426
+  },
+  {
+    "id": "32",
+    "path": "Week 7/Week 7/Week7-Tutorial-Chapter5.pdf",
+    "pages": 12,
+    "chars": 2503
+  },
+  {
+    "id": "33",
+    "path": "Week 8/Week 8/Week8-Conclusion-After Lecture and Tutorial.pdf",
+    "pages": 5,
+    "chars": 5
+  },
+  {
+    "id": "34",
+    "path": "Week 8/Week 8/Week8-Lecture-Chapter5.pdf",
+    "pages": 70,
+    "chars": 19828
+  },
+  {
+    "id": "35",
+    "path": "Week 8/Week 8/Week8-Tutorial-Chapter5 with solution.pdf",
+    "pages": 28,
+    "chars": 9365
+  },
+  {
+    "id": "36",
+    "path": "Week 8/Week 8/Week8-Tutorial-Chapter5.pdf",
+    "pages": 11,
+    "chars": 5406
+  }
+]
